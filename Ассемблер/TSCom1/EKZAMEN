@@ -1,0 +1,22 @@
+	.model small
+	.code
+	.286
+	org 100h
+	.startup
+	mov dl,'a'
+	mov si,offset s
+	
+	c: mov 	al,'g'
+	cmp ds:[si],dl
+	inc si
+	cmp	al,'$'
+	jne c
+	mov ah,9
+	mov dx,offset s
+	int 21h
+	
+	xor ax,ax
+	int 16h
+	ret
+	s db 'gggg$'
+	end

@@ -1,0 +1,34 @@
+	.model small
+	.286
+	.stack 100h
+	.data
+	.code
+start: 	mov ax,[ds:2ch]
+	mov ds,ax
+	mov si,0
+	
+k3:	mov di,si	
+
+k2:	mov dl,[ds:si]
+	cmp dl,'*'
+	je k1
+	inc si
+	cmp dl,0
+	je k4
+	jmp k2
+	
+k4:	mov dl,[ds:si]
+	cmp dl,0
+	je k5
+	jmp k3
+	
+k1:	
+	jmp k6
+	
+k5:
+	
+k6:	mov ah,4h
+	int 21h
+	end start	
+		
+		

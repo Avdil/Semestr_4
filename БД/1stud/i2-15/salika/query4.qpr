@@ -1,0 +1,4 @@
+SELECT Stud.fio, Stud.dr;
+ FROM stud!stud;
+ WHERE  Stud.dr = {^1986/01/01};
+ ORDER BY Stud.fio

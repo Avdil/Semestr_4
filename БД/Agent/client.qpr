@@ -1,0 +1,4 @@
+SELECT Client.surname, Client.name, Client.patronymic, Client.telephone,;
+  Client.dr, Client.seriya_pasp, Client.num_pasp;
+ FROM agent!client;
+ WHERE  Client.dr >= {^1985/01/01}

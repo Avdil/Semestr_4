@@ -1,0 +1,26 @@
+Turbo Assembler  Version 3.1  Copyright (c) 1988, 1992 Borland International
+
+Assembling file:   C:\AVDIL\lab13_2.asm  to  lab13_2.OBJ
+*Warning* C:\AVDIL\lab13_2.asm(37) Argument needs type override
+*Warning* C:\AVDIL\lab13_2.asm(39) Argument needs type override
+*Warning* C:\AVDIL\lab13_2.asm(41) Argument needs type override
+*Warning* C:\AVDIL\lab13_2.asm(51) Argument needs type override
+*Warning* C:\AVDIL\lab13_2.asm(65) Argument needs type override
+*Warning* C:\AVDIL\lab13_2.asm(70) Argument needs type override
+*Warning* C:\AVDIL\lab13_2.asm(72) Argument needs type override
+*Warning* C:\AVDIL\lab13_2.asm(74) Argument needs type override
+*Warning* C:\AVDIL\lab13_2.asm(79) Argument needs type override
+*Warning* C:\AVDIL\lab13_2.asm(81) Argument needs type override
+*Warning* C:\AVDIL\lab13_2.asm(83) Argument needs type override
+*Warning* C:\AVDIL\lab13_2.asm(85) Argument needs type override
+*Warning* C:\AVDIL\lab13_2.asm(90) Argument needs type override
+*Warning* C:\AVDIL\lab13_2.asm(96) Argument needs type override
+*Warning* C:\AVDIL\lab13_2.asm(99) Reserved word used as symbol: LOOP
+*Warning* C:\AVDIL\lab13_2.asm(103) Argument needs type override
+*Warning* C:\AVDIL\lab13_2.asm(110) Argument needs type override
+Error messages:    None
+Warning messages:  17
+Passes:            1
+Remaining memory:  421k
+
+Turbo Link  Version 5.1 Copyright (c) 1992 Borland International

@@ -1,0 +1,58 @@
+ 	 .model small
+ 	 .286
+  	.stack 100h
+  	.data
+  	.code
+ start:
+ 	mov ax,[es:2ch]
+ 	mov ds,ax
+ 	mov si,0
+l1:		.model small
+	.286
+	.data
+message	db	'Eto pyt zapyska programmi:',10,13,'$'
+	.code
+start:	mov ax, [ds:2ch]
+	mov ax, @data
+
+
+	mov ds,ax
+	mov si,0
+l1:	mov dl,[ds:si]
+	inc si
+	cmp dl,0
+	jne l1
+	mov dl,[ds:si]
+	inc si
+	cmp dl,0
+	jne l1
+	add si,2
+l2:	mov dl,[ds:si]
+	cmp dl,0
+	je l3
+	mov ah,2h
+	int 21h
+	inc si	
+	jmp l2
+l3:	mov ah,4ch
+	int 21h
+	end start
+mov dl,[ds:si]
+ 	inc si
+ 	cmp dl,0
+ 	jne l1
+ 	mov dl,[ds:si]
+	inc si
+	cmp dl,0
+	jne l1
+	add si,2
+l2:	mov dl,[ds:si]
+	cmp dl,0
+	je l2
+	mov ah,2h
+	int 21h
+	inc si
+	jmp l3
+l3:	mov ah,4ch
+	int 21h
+	end start 		

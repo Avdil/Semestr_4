@@ -1,0 +1,45 @@
+	.model small
+	.286
+	.data
+a	db	10,13, 'Net s takim simvolom ne sushestvuet',10,13,'$'
+	.code
+start:	mov ax,[ds:2ch]
+	mov ds,ax
+	mov bp, 0
+	mov si,-1		;index po simvolu
+	
+k3:	inc si
+	mov di, si		;nachalo obozrevaemoi stroki
+	
+k2:	mov dl, [ds:si]		;simvol iz sredi okrujeniya
+	cmp dl, 'B'
+	je k1			;simvol est'
+	inc si
+	cmp dl,0
+	jne k2
+	
+;proverka na vtoroy 0
+k7:	mov dl, [ds:si]
+	cmp dl,0
+	jne k3
+;srtoki net
+	cmp bp,1
+	je k6
+	mov ax,@data
+	mov ds,ax
+	mov dx,offset a
+	mov ah,9h
+	int 21h
+	jmp k6			
+k1: 	mov si,di		;vivod stroki
+	mov bp,1
+k5:	mov dl,[ds:si]
+	inc si
+	cmp dl,0
+	je k7
+	mov ah,2h
+	int 21h
+	jmp k5
+k6:	mov ah,4ch		;exit
+	int 21h
+	end start

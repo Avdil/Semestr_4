@@ -1,0 +1,46 @@
+	.model small
+	.286
+	.data
+;a	dw	5;iskomaya stroka
+	.code
+; adres sredy okrujeniya
+start:	mov ax,[es:2ch]
+	mov ds,ax
+	mov di,0
+	mov si,0
+; polychit a
+	mov bp,5
+; sravnenie nomera stroki
+k4:	inc di
+	cmp di,bp
+	je k3
+	
+k1:	mov dl,[ds:si]
+	inc si
+	cmp dl,0
+	jne k1
+	mov dl,[ds:si]
+	inc si
+	cmp dl,0
+	jne k1
+	mov dl,[ds:si]
+	inc si
+	cmp dl,0
+	jne k4
+	jmp k2
+	
+; vyvod stroki
+k3:	mov dl,[ds:si]
+	cmp dl,0
+	je k5
+	mov ah,2h
+	int 21h
+	inc si
+	jmp k3
+; net stroki
+k2:
+
+;exit
+k5:	mov ah,4ch
+	int 21h
+	end start

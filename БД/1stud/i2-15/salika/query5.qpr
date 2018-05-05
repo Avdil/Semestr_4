@@ -1,0 +1,4 @@
+SELECT Stud.god, COUNT(Stud.god);
+ FROM stud!stud;
+ WHERE  Stud.god = 2009;
+ GROUP BY Stud.god

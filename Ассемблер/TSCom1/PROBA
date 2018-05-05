@@ -1,0 +1,25 @@
+	.model small
+	.data
+	mes db 'assembler$'
+	.code
+start:	 mov ax,@data
+	mov es,ax
+	
+	mov ah,0h
+	mov al,3
+	int 10h
+	
+	mov ah,13h
+	mov al,1
+	
+	mov bh,0
+	mov cx,255
+	mov bl,4
+	mov dh,10
+	mov al,30
+	lea bp,mes
+	int 10h
+	
+	mov ah,4ch
+	int 21h
+	end start

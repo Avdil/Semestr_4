@@ -1,0 +1,45 @@
+	.model small
+	.286
+	.data
+	.code
+start:	mov ah, 00h
+	mov al, 03h
+	int 10h
+	
+	mov ax,0b800h
+	mov ds,ax
+	mov si,434
+	mov dl,0
+m5:	mov di,1
+	add si,100
+	
+	
+m1:	inc si
+	cmp si,1
+	je m2
+	cmp si,4
+	je m3
+	cmp si,5
+	jne start
+	jmp m3
+	mov [ds:si],dl
+	inc si
+	inc di
+	inc dl
+	mov [ds:si], 71
+	inc si
+	mov [ds:si], 20h
+	inc si
+	mov [ds:si], 71
+	inc si
+	
+m2: 	cmp dl,255
+	je m3
+	cmp di,16
+	je m5
+	jmp m1
+m3:	mov ah,08h
+	int 21h
+	mov ah,4ch
+	int 21h
+	end start

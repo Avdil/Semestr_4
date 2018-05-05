@@ -1,0 +1,4 @@
+SELECT Tour.country, Tour.resort, Tour.treatment, Tour.transport,;
+  Tour.exursion, Tour.date_depart, Tour.date_arriv;
+ FROM agent!tour;
+ WHERE  Tour.treatment 

@@ -1,0 +1,55 @@
+.286
+.model small
+.stack 100h
+.data
+msg db 'Enter symbol: &'
+.code
+start:
+	push ds
+	mov ax, @data
+	mov ds, ax
+	mov ah, 09h
+	lea dx, word prt [msg]
+	int 21h
+	mov ah, 01h
+	int 21h
+	mov bl, al
+	call new_line
+	pop ds
+	mov si, 2ch
+	lodsw
+	mov es, ax
+	mov ds, ax
+	xor si, si
+next_char:
+	lodsb
+	cmp al, bl
+	jne is_end_str
+	mov di, si
+	xor ax, ax
+	stc
+	sbb cx, cx
+	repne scasb
+	mov byte prt [di-1], '$'
+	mov ah, 09h
+	int 21h
+	jmp end_search
+	is_end_str:
+	test al,al
+	jne next_char
+	mov dx, si
+	cmp byte ptr[si], 0
+	jne next_char
+	end_search:
+	mov ax, 4c00h
+	int 21h
+	new_line proc near
+	pusha
+	mov al, 0ah
+	int 29h
+	mov al, 0dh
+	int 29h
+	popa 
+	ret
+	new_line endp
+	end start

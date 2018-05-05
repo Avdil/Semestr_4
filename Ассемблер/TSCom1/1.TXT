@@ -1,0 +1,38 @@
+Turbo Assembler  Version 3.1  Copyright (c) 1988, 1992 Borland International
+
+Assembling file:   lab_8.asm
+**Error** lab_8.asm(1) Invalid model type
+**Error** lab_8.asm(3) Model must be specified first
+**Error** lab_8.asm(4) Code or data emission to undeclared segment
+**Error** lab_8.asm(5) Model must be specified first
+**Error** lab_8.asm(6) Undefined symbol: @DATA
+**Error** lab_8.asm(7) Code or data emission to undeclared segment
+**Error** lab_8.asm(8) Undefined symbol: MES
+**Error** lab_8.asm(9) Code or data emission to undeclared segment
+**Error** lab_8.asm(10) Code or data emission to undeclared segment
+**Error** lab_8.asm(11) Code or data emission to undeclared segment
+**Error** lab_8.asm(12) Code or data emission to undeclared segment
+**Error** lab_8.asm(13) Code or data emission to undeclared segment
+**Error** lab_8.asm(14) Code or data emission to undeclared segment
+**Error** lab_8.asm(15) Code or data emission to undeclared segment
+**Error** lab_8.asm(16) Undefined symbol: K1
+**Error** lab_8.asm(17) Code or data emission to undeclared segment
+**Error** lab_8.asm(18) Code or data emission to undeclared segment
+**Error** lab_8.asm(19) Code or data emission to undeclared segment
+**Error** lab_8.asm(20) Undefined symbol: K1
+**Error** lab_8.asm(21) Code or data emission to undeclared segment
+**Error** lab_8.asm(22) Code or data emission to undeclared segment
+**Error** lab_8.asm(23) Code or data emission to undeclared segment
+**Error** lab_8.asm(24) Undefined symbol: K2
+**Error** lab_8.asm(25) Code or data emission to undeclared segment
+**Error** lab_8.asm(26) Code or data emission to undeclared segment
+**Error** lab_8.asm(27) Code or data emission to undeclared segment
+**Error** lab_8.asm(28) Undefined symbol: K3
+**Error** lab_8.asm(29) Code or data emission to undeclared segment
+**Error** lab_8.asm(30) Code or data emission to undeclared segment
+**Error** lab_8.asm(31) Undefined symbol: START
+Error messages:    30
+Warning messages:  None
+Passes:            1
+Remaining memory:  474k
+

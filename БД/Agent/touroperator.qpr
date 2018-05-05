@@ -1,0 +1,4 @@
+SELECT Tur_operator.appelation, Tur_operator.inn, Tur_operator.fio,;
+  Tur_operator.telephone, Tur_operator.site, Tur_operator.value;
+ FROM agent!tur_operator;
+ WHERE  Tur_operator.value <= 600.000

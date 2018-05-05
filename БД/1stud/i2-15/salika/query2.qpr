@@ -1,0 +1,3 @@
+SELECT Stud.fio, Stud.money;
+ FROM stud!stud;
+ WHERE  Stud.plata 

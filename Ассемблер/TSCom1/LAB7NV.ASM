@@ -1,0 +1,22 @@
+	.model	Small	
+	.286
+	.stack	100h
+	.data
+Message		db 'Hello World',10,13,'$'
+Message1	db 'Valieva Niyare Enverovna', 10,13,'$'
+Message2	db 'I-1-14',10,13,'$'			
+	.code
+Start:	mov	ax, @data
+	mov	dx, ax
+	mov	dx, offset Message
+	mov	ah,9h
+	int	21h
+	mov 	dx, offset Message1
+	mov	ah,9h
+	int 	21h
+	mov	dx,offset Message2
+	mov	ah,9h
+	int 	21h
+	mov	ah,4ch
+	int	21h
+	end	Start		

@@ -1,0 +1,4 @@
+SELECT Sotr.surname, Sotr.name, Sotr.patronymic, Sotr.telephon, Sotr.dr,;
+  Sotr.position;
+ FROM agent!sotr;
+ WHERE  Sotr.dr <= {^1985/01/01}

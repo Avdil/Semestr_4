@@ -1,0 +1,5 @@
+SELECT Hotel.appelation, Hotel.city, Hotel.address, Hotel.telephon,;
+  Hotel.food, Hotel.accom, Hotel.value;
+ FROM ;
+     agent!hotel;
+ WHERE  Hotel.value < ( 3000 )

@@ -1,0 +1,9 @@
+SELECT Stud.fio;
+ FROM ;
+     stud!stud ;
+    INNER JOIN stud!session ;
+   ON  Stud.num = Session.num;
+ WHERE ( (  Session.num_session = 1;
+   AND  Session.baza_dannyh >= 4 );
+   AND  Session.programmirovanie >= 4 );
+   AND  Session.matematika >= 4

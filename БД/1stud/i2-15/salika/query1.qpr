@@ -1,0 +1,4 @@
+SELECT Stud.num, Stud.fio, Stud.god, Stud.dr, Stud.plata, Stud.sr, Stud.money,;
+  Stud.port, Stud.adr;
+ FROM stud!stud;
+ WHERE  Stud.god = 2007

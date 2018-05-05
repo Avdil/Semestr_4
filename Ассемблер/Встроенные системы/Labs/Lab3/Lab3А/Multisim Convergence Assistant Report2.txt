@@ -1,0 +1,67 @@
+Multisim Convergence Assistant Summary Report
+ 
+ Convergence Assistant Summary Report
+
+Outcome:
+
+	The Convergence Assistant was unable to correct the problem. Consult the help documentation for more information about simulation errors and how to correct them.
+
+Multisim Convergence Assistant Log 
+ 
+Step 1: Verifying Error Scenario
+	...completed.
+
+Step 2: Setting parameter Integration Method (METHOD) to Gear 
+	Simulating...
+	  ...completed. Simulation error still occurs.
+
+Step 3: Setting parameter Initial Conditions to Set To Zero 
+	Simulating...
+	  ...completed. Simulation error still occurs.
+
+Step 4: Setting parameter Maximum Timestep (TMAX) to 1.0000e-004 
+	Simulating...
+	  ...completed. Simulation error still occurs.
+
+Step 5: Setting parameter Maximum Timestep (TMAX) to 1.0000e-003 
+	Simulating...
+	  ...completed. Simulation error still occurs.
+
+Step 6: Setting parameter Relative error tolerance (RELTOL) to 1.0000e-002 
+	Simulating...
+	  ...completed. Simulation error still occurs.
+
+Step 7: Setting parameter Shunt resistance from analog nodes to ground (RSHUNT) to 1000000000 
+	Simulating...
+	  ...completed. Simulation error still occurs.
+
+Step 8: Setting parameter Shunt resistance from analog nodes to ground (RSHUNT) to 100000000 
+	Simulating...
+	  ...completed. Simulation error still occurs.
+
+Step 9: Setting parameter Shunt resistance from analog nodes to ground (RSHUNT) to 10000000 
+	Simulating...
+	  ...completed. Simulation error still occurs.
+
+Step 10: Setting parameter DC iteration limit (ITL1) to 200 
+	Simulating...
+	  ...completed. Simulation error still occurs.
+
+Step 11: Setting parameter DC iteration limit (ITL1) to 300 
+	Simulating...
+	  ...completed. Simulation error still occurs.
+
+Step 12: Setting parameter Minimum conductance (GMIN) to 1.0000e-007 
+	Simulating...
+	  ...completed. Simulation error still occurs.
+
+Step 13: Setting parameter Maximum Timestep (TMAX) to 1.0000e-004 
+	Simulating...
+	  ...completed. Simulation error still occurs.
+
+Step 14: Setting parameter Maximum Timestep (TMAX) to 1.0000e-005 
+	Simulating...
+	  ...completed. Simulation error still occurs.
+
+Convergence Assistant completed unsuccessfully.
+ 

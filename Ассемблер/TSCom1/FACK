@@ -1,0 +1,26 @@
+	CSEG segment
+	org 100h
+	
+	proga:
+	lea di, A
+	mov cx, 100
+	mov al,1	
+
+;cikl:	stosb
+;	inc al
+;	loop cikl
+	
+mov cx,50
+lea si, A
+nx:
+	lodsw
+	xchg ah,al
+	mov [si-2],ax
+;	loop nx
+	
+ret
+
+A db 100 dup ('Hello')
+
+CSEG ends
+end proga
